@@ -1,17 +1,17 @@
-# cricket_app
+# Mini Cricket App
 
-A new Flutter project.
+A simple Flutter application for playing a mini 6-ball cricket game.
 
-## Getting Started
+## Features
+- **Batting & Bowling tracker**: Displays total runs scored and remaining balls out of 6.
+- **Interactive Gameplay**: Tap **Bat** to score a random run between 0 and 6.
+- **Real-time Action Display**: Displays outcome ("No Runs" or "[X] Runs").
+- **Game Restart**: Tap **Restart** when balls reach 0 to play again.
 
-This project is a starting point for a Flutter application.
+## How to Run
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter run -d chrome
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![app_ui](./ui.png)
