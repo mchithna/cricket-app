@@ -40,7 +40,85 @@ class _CricketGameScreenState extends State<CricketGameScreen> {
         backgroundColor: Colors.blue[900],
         centerTitle: true,
       ),
-      body: const SizedBox(),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 60.0),
+        child: Row(
+          children: [
+            // Left Column (Batting)
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.white,
+                    child: const Icon(
+                      Icons.sports_cricket,
+                      size: 60,
+                      color: Colors.brown,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Runs',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    '0',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            // Right Column (Bowling)
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.white,
+                    child: const Icon(
+                      Icons.sports_baseball,
+                      size: 60,
+                      color: Colors.red,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Balls',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    '6',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
